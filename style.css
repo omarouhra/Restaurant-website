@@ -52,6 +52,7 @@ button{
     border:none;
     color: #C89446;
     margin-top: 40px;
+    cursor: pointer;
 }
 
 
@@ -60,21 +61,20 @@ button{
 header{
     background-image:    linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0)),
     url(/assets/eggs.jpg);
-    height: 100vh;
+    height: 80vh;
     background-position: center;
     background-size: cover;
 }
 .navigation{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     color: white;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 30px 0;
+    padding: 30px 20px;
 }
 nav{
-    display: flex;
-    align-items: center;
     gap:34px;
 }
 nav button{
@@ -126,6 +126,7 @@ nav button{
 }
 .article {
     width: 445px;
+    z-index: 99;
 }
 
 
@@ -177,7 +178,7 @@ nav button{
     border-bottom: 2px solid #C89446;
 }
 .menu-articles {
-    padding: 100px 0;
+    padding: 100px 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 100px;
@@ -211,7 +212,7 @@ nav button{
 
 /* chef section*/
 .chef-section{
-    padding: 100px 0;
+    padding: 100px 20px 0px;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -234,7 +235,7 @@ nav button{
     gap:40px;
 }
 .reservation-section article{
-    width: 40%;
+    max-width: 600px;
     text-align: center;
 }
 Form{
@@ -277,7 +278,7 @@ Form{
 }
 .recepies-section{
     position: relative;
-    padding: 100px 0;
+    padding: 100px 20px;
     max-width: 1200px;
     margin: 0 auto;
     text-align: end;
@@ -317,7 +318,6 @@ Form{
     margin: 20px 0;
 }
 
-
 /* map section */
 
 .map-section{
@@ -326,7 +326,6 @@ Form{
 
 /* footer */
 footer{
-    padding-top: 55px ;
     background-color: #383838;
     position: relative;
     height: 345px;
@@ -337,6 +336,7 @@ footer img{
     right:0;
 }
 .footer-container{
+    padding: 55px 20px 0px 20px;
     display: flex;
     flex-direction: column;
     gap: 50px;
