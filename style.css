@@ -1,0 +1,362 @@
+/* Reset */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Source Sans Pro , sans-serif;
+}
+a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+article hr{
+    width: 30px;
+    border: 1px solid #C89446;
+    margin-bottom: 16px;
+}
+button{
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/* Reusebale styling */
+.center-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.span{
+    font-size: 40px;
+    line-height: 200%;
+    font-family: Pinyon script;
+    color:#C89446;
+}
+.title{
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+.text{
+    color: #6F6F6F;
+    line-height: 200%;
+}
+.button {
+    border:none;
+    color: #C89446;
+    margin-top: 40px;
+}
+
+
+
+/* Header */
+header{
+    background-image:    linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0)),
+    url(/assets/eggs.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+nav{
+    display: flex;
+    align-items: center;
+    gap:34px;
+}
+nav button{
+    padding: 11px 17px ;
+    background-color: transparent;
+    border: 1px solid #C89446;
+    color: white;
+}
+
+/* Hero Section */
+.hero-section{
+    gap: 5px;
+    color: white;
+    height: 80%;
+}
+
+.hero-section span{
+    font-size: 60px;
+}
+.hero-section h1{
+    font-size: 80px;
+    letter-spacing: 11.67px;
+}
+.hero-section p{
+    font-size: 24px;
+    font-weight: lighter;
+    letter-spacing: 4px;
+}
+
+/* Discover section */
+.discover-container{
+    position: relative;
+}
+#background-1{
+    position: absolute;
+    right: 0;
+    top: 50px;
+}
+.discover-section{
+    max-width: 1200px;
+    margin: -10px auto;
+    gap: 100px;
+}
+.image-border{
+    border: 1px solid #C89446;
+}
+.image-border img{
+    transform: translate(30px,30px);
+}
+.article {
+    width: 445px;
+}
+
+
+/* Tasteful section */
+.tasteful-container{
+    position: relative;
+}
+#background-2{
+    position: absolute;
+    left: 0;
+    top: 50px; 
+}
+.tasteful-section{
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 150px 0;
+    gap: 100px;
+}
+.reverse img{
+    transform: translate(-30px,30px) !important;
+}
+
+
+/* Menu section */
+.menu-section{
+    position: relative;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+#polygone{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.menu-section a{
+    color: black;
+}
+.menu p{
+    width: 60%;
+}
+.links{
+    display: flex;
+    gap: 65px;
+}
+#active-link{
+    border-bottom: 2px solid #C89446;
+}
+.menu-articles {
+    padding: 100px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+}
+.recipe {
+    gap:50px;
+    background-color: white;
+    z-index: 99;
+
+}
+.recipe-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    gap: 10px;
+    text-align: end;
+}
+.recipe-content span{
+    font-size: 40px;
+}
+.recipe-content h3{
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.recipe-content p{
+    color:#6F6F6F;
+    font-size:14px ;
+    line-height: 190%;
+}
+
+/* chef section*/
+.chef-section{
+    padding: 100px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.chef-section article{
+    width: 60%;
+}
+.chef-section img{
+    filter: grayscale(100%);
+    transition: all 1s ease-in-out;
+}
+.chef-section img:hover{
+    filter: grayscale(0%);
+}
+
+/* resevation section */
+.reservation-section{
+    background-image: linear-gradient(rgb(0, 0, 0),rgba(0, 0, 0, 0)), url(/assets/reservation.jpg);
+    height: 600px;
+    color:white;
+    gap:40px;
+}
+.reservation-section article{
+    width: 40%;
+    text-align: center;
+}
+Form{
+    gap:60px;
+}
+.inputs{
+    gap:20px;
+    
+}
+.inputs input, select{
+   padding: 11px 88px 11px 16px ; 
+   background-color: transparent;
+   border: 1px solide white;
+   color: white;
+}
+#active-input::placeholder{
+    color: white;
+}
+
+#active-input{
+    border: #C89446 1px solid;
+}
+
+.reservation-section button{
+    padding: 11px 68px;
+    background-color: #C89446;
+    border: none;
+    color:white;
+}
+
+/* Recipies section  */
+.recepies-container{
+    position: relative;
+}
+#background-3{
+    position: absolute;
+    left: 0;
+    top: 0;
+
+}
+.recepies-section{
+    position: relative;
+    padding: 100px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap:50px;
+}
+.recepies-section article{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 60%;
+}
+.plates{
+    width: 80%;
+}
+.plate{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+}
+.plate h3{
+    font-size: 28px;
+}
+.plate small{
+    font-size: 18px;
+    font-weight: lighter;
+    color: gray;
+}
+.plate p{
+    color: gray;
+}
+
+.plates hr{
+    margin: 20px 0;
+}
+
+
+/* map section */
+
+.map-section{
+    height: 450px;
+}
+
+/* footer */
+footer{
+    padding-top: 55px ;
+    background-color: #383838;
+    position: relative;
+    height: 345px;
+}
+footer img{
+    position: absolute;
+    top:25px;
+    right:0;
+}
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.footer-content{
+    display: flex;
+}
+.footer-container h3{
+    color: #C89446;
+    margin-bottom: 15px;
+}
+.footer-container p{
+    color: white;
+    font-weight: lighter;
+    margin-bottom: 10px;
+    width: 80%;
+}
+.footer-container span{
+    font-weight: bold;
+}
+
