@@ -456,11 +456,18 @@ nav a{
 }
 }
 
-/* tablet */
+/* mobile */
 @media only screen and (max-width: 425px) {
 nav {
-   display: none;
+   display: grid;
+   grid-template-columns: repeat(3,auto);
+
 }
+nav a{
+    text-align: center;
+
+}
+
 .span{
 font-size:30px
 }
