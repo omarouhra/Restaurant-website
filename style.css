@@ -23,17 +23,7 @@ button{
 }
 
 /* Reusebale styling */
-.center-row{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.center-column{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+
 .span{
     font-size: 40px;
     line-height: 200%;
@@ -75,6 +65,8 @@ header{
     padding: 30px 20px;
 }
 nav{
+    display: flex;
+    align-items: center;
     gap:34px;
 }
 nav button{
@@ -86,6 +78,11 @@ nav button{
 
 /* Hero Section */
 .hero-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     gap: 5px;
     color: white;
     height: 80%;
@@ -114,8 +111,12 @@ nav button{
     top: 50px;
 }
 .discover-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     max-width: 1200px;
     margin: -10px auto;
+    padding: 0 20px;
     gap: 100px;
 }
 .image-border{
@@ -140,9 +141,12 @@ nav button{
     top: 50px; 
 }
 .tasteful-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     max-width: 1200px;
     margin: 0px auto;
-    padding: 150px 0;
+    padding: 150px 20px;
     gap: 100px;
 }
 .reverse img{
@@ -152,11 +156,20 @@ nav button{
 
 /* Menu section */
 .menu-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: relative;
     gap: 50px;
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 #polygone{
     position: absolute;
@@ -184,10 +197,12 @@ nav button{
     gap: 100px;
 }
 .recipe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap:50px;
     background-color: white;
     z-index: 99;
-
 }
 .recipe-content {
     display: flex;
@@ -212,6 +227,8 @@ nav button{
 
 /* chef section*/
 .chef-section{
+    display: flex;
+    align-items: center;
     padding: 100px 20px 0px;
     max-width: 1200px;
     margin: 0 auto;
@@ -229,21 +246,32 @@ nav button{
 
 /* resevation section */
 .reservation-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-image: linear-gradient(rgb(0, 0, 0),rgba(0, 0, 0, 0)), url(/assets/reservation.jpg);
     height: 600px;
     color:white;
+    padding: 20px 20px;
     gap:40px;
 }
 .reservation-section article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     max-width: 600px;
     text-align: center;
 }
 Form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap:60px;
 }
 .inputs{
+    display: flex;
     gap:20px;
-    
 }
 .inputs input, select{
    padding: 11px 88px 11px 16px ; 
@@ -328,7 +356,7 @@ Form{
 footer{
     background-color: #383838;
     position: relative;
-    height: 345px;
+    overflow:hidden;
 }
 footer img{
     position: absolute;
@@ -360,3 +388,109 @@ footer img{
     font-weight: bold;
 }
 
+/* Media Queries */
+
+/* tablet */
+@media only screen and (max-width: 768px) {
+
+.navigation{
+    flex-direction: column;
+    gap:30px;
+}
+nav{
+    gap:20px;
+}
+nav button{
+    padding: 10px 10px;
+}
+nav a{
+    font-size: 14px;
+}
+.hero-section span{
+    font-size: 45px;
+}
+
+.hero-section h1{
+    font-size: 40px;
+}
+.hero-section p{
+    font-size: 20px;
+}
+.discover-section{
+    flex-direction: column;
+}
+.tasteful-section {
+    flex-direction: column-reverse;
+}
+
+.discover-section img,.tasteful-section img{
+    width: 200px;
+}
+.article {
+    width: 100%;
+}
+.links{
+    gap: 30px;
+}
+
+.menu-articles {
+    grid-template-columns: 1fr;
+}
+.chef-section {
+    flex-direction: column;
+}
+.chef-section article{
+    width: 100%;
+}
+#polygone, #background-1 , #background-2,#background-3{
+    display: none;
+}
+.inputs{
+    flex-direction: column;
+}
+.recepies-section article {
+    width: 100%;
+}
+.plates{
+    width: 100%;
+}
+}
+
+/* tablet */
+@media only screen and (max-width: 425px) {
+nav {
+   display: none;
+}
+.span{
+font-size:30px
+}
+.title{
+    font-size: 25px ;
+}
+.text{
+    font-size: 14px ;
+}
+.recipe{
+    flex-direction: column;
+}
+.recipe-content{
+    align-items: center;
+    text-align: center;
+}
+.chef-section{
+    overflow-x: hidden;
+}
+.footer-container{
+    gap: 20px;
+    flex-direction: column;
+    padding: 40px 20px;
+}
+.footer-content{
+    flex-direction: column;
+}
+footer img {
+    display: none;
+}
+
+
+}
